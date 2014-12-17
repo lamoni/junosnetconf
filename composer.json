@@ -1,0 +1,23 @@
+{
+    "name": "lamoni/junosnetconf",
+    "description": "A Juniper NETCONF XML Management Protocol implementation in PHP",
+    "license": "MIT",
+    "require": {
+        "php": ">= 5.4.16",
+        "phpseclib/phpseclib": "~0.3",
+        "lamoni/netconf": "v1.0.0"
+    },
+    "authors": [
+        { 
+            "name": "Lamoni Finlayson",
+            "email": "lamonif@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/lamoni/junosnetconf",
+    "keywords": [
+        "php",
+        "netconf",
+        "juniper",
+        "junos"
+    ]
+}
