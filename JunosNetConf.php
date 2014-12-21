@@ -29,12 +29,12 @@ class JunosNetConf
      * @param $hostname
      * @param NetConfAuthAbstract $netconfAuth
      */
-    public function __construct($hostname, NetConfAuthAbstract $netconfAuth)
+    public function __construct($hostname, NetConfAuthAbstract $netconfAuth, array $options=[])
     {
 
         $this->hostname = $hostname;
 
-        $this->netconf = new NetConf($hostname, $netconfAuth);
+        $this->netconf = new NetConf($hostname, $netconfAuth, $options);
 
     }
 
