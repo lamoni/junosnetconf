@@ -32,3 +32,10 @@ $junos = new JunosNetConf(
 
 echo $junos->operationalCommandText('show interfaces terse');
 ```
+
+Committing set-format configuration changes
+------------------------------------------------------------------
+
+$config = Array('set interfaces ge-0/0/0 unit 0 description "test"');
+$junos->loadConfigurationSet($config);
+$junos->commitConfiguration();
